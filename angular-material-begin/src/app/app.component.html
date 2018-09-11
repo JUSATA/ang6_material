@@ -1,0 +1,36 @@
+<h1>
+  {{title}}
+</h1>
+<!-- [(ngModel)]="title" -->
+
+<div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Simple Input" >
+    </mat-form-field>
+
+    <!-- <mat-icon>home</mat-icon>
+     -->
+    <mat-form-field>
+      <mat-select placeholder="I'm a select" [(ngModel)]="selectedValue">
+        <mat-option *ngFor="let item of items" [value]="item.value">
+          {{item.view}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+          <mat-form-field>
+            <input matInput placeholder="Input">
+          </mat-form-field>
+
+
+          <mat-form-field>
+            <textarea matInput placeholder="Textarea"></textarea>
+          </mat-form-field>
+
+
+    <!--<h3>Aceptar</h3>-->
+      <div class="button-row">
+        <a mat-stroked-button routerLink=".">ACEPTAR</a>
+      </div>
+ </div>
